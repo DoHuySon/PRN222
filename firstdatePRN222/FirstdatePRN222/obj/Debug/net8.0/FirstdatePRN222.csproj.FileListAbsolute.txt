@@ -1,0 +1,14 @@
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\bin\Debug\net8.0\FirstdatePRN222.exe
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\bin\Debug\net8.0\FirstdatePRN222.deps.json
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\bin\Debug\net8.0\FirstdatePRN222.runtimeconfig.json
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\bin\Debug\net8.0\FirstdatePRN222.dll
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\bin\Debug\net8.0\FirstdatePRN222.pdb
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.AssemblyInfoInputs.cache
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.AssemblyInfo.cs
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.csproj.CoreCompileInputs.cache
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.dll
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\refint\FirstdatePRN222.dll
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.pdb
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\FirstdatePRN222.genruntimeconfig.cache
+D:\Semester7\PRN222\firstdatePRN222\FirstdatePRN222\obj\Debug\net8.0\ref\FirstdatePRN222.dll

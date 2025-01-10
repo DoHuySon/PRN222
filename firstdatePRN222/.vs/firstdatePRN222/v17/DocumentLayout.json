@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester7\\PRN222\\firstdatePRN222\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D3B48CB-0077-4C7E-ACE6-E0E6299D4EAD}|FirstdatePRN222\\FirstdatePRN222.csproj|d:\\semester7\\prn222\\firstdateprn222\\firstdateprn222\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D3B48CB-0077-4C7E-ACE6-E0E6299D4EAD}|FirstdatePRN222\\FirstdatePRN222.csproj|solutionrelative:firstdateprn222\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\firstdatePRN222\\FirstdatePRN222\\Program.cs",
+              "RelativeDocumentMoniker": "FirstdatePRN222\\Program.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\firstdatePRN222\\FirstdatePRN222\\Program.cs",
+              "RelativeToolTip": "FirstdatePRN222\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T04:16:18.422Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

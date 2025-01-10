@@ -1,0 +1,14 @@
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.AssemblyInfoInputs.cache
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.AssemblyInfo.cs
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.csproj.CoreCompileInputs.cache
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\bin\Debug\net8.0\UDPSereverApp.exe
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\bin\Debug\net8.0\UDPSereverApp.deps.json
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\bin\Debug\net8.0\UDPSereverApp.runtimeconfig.json
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\bin\Debug\net8.0\UDPSereverApp.dll
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\bin\Debug\net8.0\UDPSereverApp.pdb
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.dll
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\refint\UDPSereverApp.dll
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.pdb
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\UDPSereverApp.genruntimeconfig.cache
+D:\Semester7\PRN222\UDPApp\UDPSereverApp\obj\Debug\net8.0\ref\UDPSereverApp.dll

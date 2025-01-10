@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester7\\PRN222\\UDPApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6E1A5923-7B45-41EF-AD1D-266DFD120B76}|UDPClientApp\\UDPClientApp.csproj|d:\\semester7\\prn222\\udpapp\\udpclientapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6E1A5923-7B45-41EF-AD1D-266DFD120B76}|UDPClientApp\\UDPClientApp.csproj|solutionrelative:udpclientapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9E21EB29-DD4D-4F33-A297-FF0D9CBC0916}|UDPSereverApp\\UDPSereverApp.csproj|d:\\semester7\\prn222\\udpapp\\udpsereverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9E21EB29-DD4D-4F33-A297-FF0D9CBC0916}|UDPSereverApp\\UDPSereverApp.csproj|solutionrelative:udpsereverapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\UDPApp\\UDPClientApp\\Program.cs",
+              "RelativeDocumentMoniker": "UDPClientApp\\Program.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\UDPApp\\UDPClientApp\\Program.cs",
+              "RelativeToolTip": "UDPClientApp\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAArwB4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T02:01:20.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\UDPApp\\UDPSereverApp\\Program.cs",
+              "RelativeDocumentMoniker": "UDPSereverApp\\Program.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\UDPApp\\UDPSereverApp\\Program.cs",
+              "RelativeToolTip": "UDPSereverApp\\Program.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAArwBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T01:52:25.682Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

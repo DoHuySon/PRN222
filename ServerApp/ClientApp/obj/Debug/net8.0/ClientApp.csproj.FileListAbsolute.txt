@@ -1,0 +1,14 @@
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.AssemblyInfoInputs.cache
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.AssemblyInfo.cs
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.csproj.CoreCompileInputs.cache
+D:\Semester7\PRN222\ServerApp\ClientApp\bin\Debug\net8.0\ClientApp.exe
+D:\Semester7\PRN222\ServerApp\ClientApp\bin\Debug\net8.0\ClientApp.deps.json
+D:\Semester7\PRN222\ServerApp\ClientApp\bin\Debug\net8.0\ClientApp.runtimeconfig.json
+D:\Semester7\PRN222\ServerApp\ClientApp\bin\Debug\net8.0\ClientApp.dll
+D:\Semester7\PRN222\ServerApp\ClientApp\bin\Debug\net8.0\ClientApp.pdb
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.dll
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\refint\ClientApp.dll
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.pdb
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ClientApp.genruntimeconfig.cache
+D:\Semester7\PRN222\ServerApp\ClientApp\obj\Debug\net8.0\ref\ClientApp.dll
