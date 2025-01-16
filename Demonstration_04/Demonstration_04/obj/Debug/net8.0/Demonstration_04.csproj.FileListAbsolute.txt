@@ -1,0 +1,15 @@
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\bin\Debug\net8.0\Demonstration_04.exe
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\bin\Debug\net8.0\Demonstration_04.deps.json
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\bin\Debug\net8.0\Demonstration_04.runtimeconfig.json
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\bin\Debug\net8.0\Demonstration_04.dll
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\bin\Debug\net8.0\Demonstration_04.pdb
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.AssemblyInfoInputs.cache
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.AssemblyInfo.cs
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.csproj.CoreCompileInputs.cache
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.sourcelink.json
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.dll
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\refint\Demonstration_04.dll
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.pdb
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\Demonstration_04.genruntimeconfig.cache
+D:\Semester7\PRN222\Demonstration_04\Demonstration_04\obj\Debug\net8.0\ref\Demonstration_04.dll

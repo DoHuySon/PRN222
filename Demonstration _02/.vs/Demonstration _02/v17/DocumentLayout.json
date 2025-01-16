@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester7\\PRN222\\Demonstration _02\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{901A2306-CA0C-4418-889B-D6391263D889}|Demonstration _02\\Demonstration _02.csproj|d:\\semester7\\prn222\\demonstration _02\\demonstration _02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{901A2306-CA0C-4418-889B-D6391263D889}|Demonstration _02\\Demonstration _02.csproj|solutionrelative:demonstration _02\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\Demonstration _02\\Demonstration _02\\Program.cs",
+              "RelativeDocumentMoniker": "Demonstration _02\\Program.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\Demonstration _02\\Demonstration _02\\Program.cs",
+              "RelativeToolTip": "Demonstration _02\\Program.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACkAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T17:07:25.959Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
