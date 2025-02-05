@@ -9,9 +9,9 @@
     <Grid>
         <StackPanel>
             <Label Background="#FF73DDF4">URL</Label>
-            <TextBlock  Name="lblURL" Height="23"></TextBlock>
+            <TextBox  Name="lblURL" Height="23"></TextBox>
             <Label  Background="#FF73DDF4">HTML Source</Label>
-            <TextBlock Name="lbContent" Height="339"></TextBlock>
+            <TextBox Name="lbContent" Height="294"></TextBox>
             <WrapPanel Background="#FF73DDF4">
                 <Button Width="70" Margin="95,0,0,0" Click="btnViewHTML_Click" > View HTML</Button>
                 <Button Width="70" Margin="100,0,100,0" Click="btnClear_Click" >Clear</Button>

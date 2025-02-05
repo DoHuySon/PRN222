@@ -1,0 +1,15 @@
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\bin\Debug\net8.0\PLINQ_Demo02.exe
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\bin\Debug\net8.0\PLINQ_Demo02.deps.json
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\bin\Debug\net8.0\PLINQ_Demo02.runtimeconfig.json
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\bin\Debug\net8.0\PLINQ_Demo02.dll
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\bin\Debug\net8.0\PLINQ_Demo02.pdb
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.AssemblyInfoInputs.cache
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.AssemblyInfo.cs
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.csproj.CoreCompileInputs.cache
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.sourcelink.json
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.dll
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\refint\PLINQ_Demo02.dll
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.pdb
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\PLINQ_Demo02.genruntimeconfig.cache
+D:\Semester7\PRN222\PLINQ_Demo02\PLINQ_Demo02\obj\Debug\net8.0\ref\PLINQ_Demo02.dll

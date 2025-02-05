@@ -22,7 +22,7 @@ namespace Lab2_HttpClient
             InitializeComponent();
         }
         readonly HttpClient client = new HttpClient();
-        private void btnClse_Click(object sender, RoutedEventArgs e) => Close();
+        private void btnClose_Click(object sender, RoutedEventArgs e) => Close();
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
             lbContent.Text = string.Empty;

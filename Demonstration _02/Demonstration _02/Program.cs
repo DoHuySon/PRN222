@@ -13,8 +13,8 @@ namespace Demonstration__02
             {
                 tasks[i] = Task.Run(() =>
                 {
-                    Console.WriteLine($"Task={{ Task.CurrentId }}, obj={{taskData}}, " +
-                                      $"ThreadId={{Thread.CurrentThread.ManagedThreadId}}");
+                    Console.WriteLine($"Task={ Task.CurrentId }, obj={taskData}, " +
+                                      $"ThreadId={Thread.CurrentThread.ManagedThreadId}");
                     Thread.Sleep(1000);
                 });
             }
