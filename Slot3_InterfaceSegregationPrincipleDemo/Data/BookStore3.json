@@ -1,0 +1,16 @@
+[
+  {
+    "Title": "AngularJS Directives",
+    "Author": "Alex Vantson",
+    "Price": "42.99",
+    "Topic" : "Angular",
+    "Duration" : "2h20m"
+  },
+  {
+    "Title": "Learning AngularJS Animations",
+    "Author": "Richard Keller",
+    "Price": "37.99",
+    "Topic": "Angular",
+    "Duration" : "3h"
+  }
+]

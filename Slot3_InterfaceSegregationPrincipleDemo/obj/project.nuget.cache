@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dhtpIYSfzNla3doQxW7KCddtH6eZGJYlHxVMtdV3GwK7zzWHAZ/07c0G1PUxAw8ofqWx2SnklsDTH3tP38xNjg==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive\\PRN222\\Slot3_InterfaceSegregationPrincipleDemo\\Slot3_InterfaceSegregationPrincipleDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

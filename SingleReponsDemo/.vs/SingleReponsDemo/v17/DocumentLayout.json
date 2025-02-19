@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester7\\PRN222\\SingleReponsDemo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8CD82483-9CFF-4AA2-AC93-61C6B969CA79}|SingleReponsDemo\\SingleReponsDemo.csproj|d:\\semester7\\prn222\\singlereponsdemo\\singlereponsdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CD82483-9CFF-4AA2-AC93-61C6B969CA79}|SingleReponsDemo\\SingleReponsDemo.csproj|solutionrelative:singlereponsdemo\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\SingleReponsDemo\\SingleReponsDemo\\Program.cs",
+              "RelativeDocumentMoniker": "SingleReponsDemo\\Program.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\SingleReponsDemo\\SingleReponsDemo\\Program.cs",
+              "RelativeToolTip": "SingleReponsDemo\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T01:25:58.554Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

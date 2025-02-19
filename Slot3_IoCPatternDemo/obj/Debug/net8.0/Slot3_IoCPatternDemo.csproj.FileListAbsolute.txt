@@ -1,0 +1,17 @@
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Slot3_IoCPatternDemo.exe
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Slot3_IoCPatternDemo.deps.json
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Slot3_IoCPatternDemo.runtimeconfig.json
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Slot3_IoCPatternDemo.dll
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Slot3_IoCPatternDemo.pdb
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.AssemblyInfoInputs.cache
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.AssemblyInfo.cs
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.csproj.CoreCompileInputs.cache
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.sourcelink.json
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.dll
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\refint\Slot3_IoCPatternDemo.dll
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.pdb
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\Slot3_IoCPatternDemo.genruntimeconfig.cache
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\obj\Debug\net8.0\ref\Slot3_IoCPatternDemo.dll
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Data\MoviesDB.json
+D:\OneDrive\PRN222\Slot3_IoCPatternDemo\bin\Debug\net8.0\Data\MoviesDB.xml

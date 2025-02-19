@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "75D5i84mFkLcMxdQM6XcoFZR2K7KZFU7idrwoep7vW9W9ZxsGY/PXDdRkdEeU9UC5t0kCszo+nMaHxZBE8G2cA==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive\\PRN222\\Slot3_OpenClosedPrincipleDemo\\Slot3_OpenClosedPrincipleDemo.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
