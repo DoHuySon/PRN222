@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|solutionrelative:carrentalmanagement_project\\controllers\\donthuexescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|d:\\semester7\\prn222\\carrentalmanagement_project\\carrentalmanagement_project\\views\\xes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|solutionrelative:carrentalmanagement_project\\views\\xes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|d:\\semester7\\prn222\\carrentalmanagement_project\\carrentalmanagement_project\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|solutionrelative:carrentalmanagement_project\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|d:\\semester7\\prn222\\carrentalmanagement_project\\carrentalmanagement_project\\views\\donthuexes\\createdonthuexe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|solutionrelative:carrentalmanagement_project\\views\\donthuexes\\createdonthuexe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|d:\\semester7\\prn222\\carrentalmanagement_project\\carrentalmanagement_project\\models\\xe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|solutionrelative:carrentalmanagement_project\\models\\xe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|d:\\semester7\\prn222\\carrentalmanagement_project\\carrentalmanagement_project\\views\\xes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{ECDDA10B-1A32-4A2C-9D33-2199197FDEF9}|CarRentalManagement_Project\\CarRentalManagement_Project.csproj|solutionrelative:carrentalmanagement_project\\views\\xes\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 196,
+          "SelectedChildIndex": 197,
           "Children": [
             {
               "$type": "Bookmark",
@@ -807,25 +807,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Xe.cs",
-              "DocumentMoniker": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Models\\Xe.cs",
-              "RelativeDocumentMoniker": "CarRentalManagement_Project\\Models\\Xe.cs",
-              "ToolTip": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Models\\Xe.cs",
-              "RelativeToolTip": "CarRentalManagement_Project\\Models\\Xe.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwCAAAAAAAAAAAAAAAA==",
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Models\\KhachHang.cs",
+              "RelativeDocumentMoniker": "CarRentalManagement_Project\\Models\\KhachHang.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Models\\KhachHang.cs",
+              "RelativeToolTip": "CarRentalManagement_Project\\Models\\KhachHang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:58:15.822Z",
+              "WhenOpened": "2025-03-27T15:00:43.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Views\\Xes\\Index.cshtml",
+              "RelativeDocumentMoniker": "CarRentalManagement_Project\\Views\\Xes\\Index.cshtml",
+              "ToolTip": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Views\\Xes\\Index.cshtml",
+              "RelativeToolTip": "CarRentalManagement_Project\\Views\\Xes\\Index.cshtml",
+              "ViewState": "AgIAAOIAAAAAAAAAAAAUwP8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T14:44:29.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreateDonThueXe.cshtml",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Views\\DonThueXes\\CreateDonThueXe.cshtml",
               "RelativeDocumentMoniker": "CarRentalManagement_Project\\Views\\DonThueXes\\CreateDonThueXe.cshtml",
               "ToolTip": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Views\\DonThueXes\\CreateDonThueXe.cshtml",
               "RelativeToolTip": "CarRentalManagement_Project\\Views\\DonThueXes\\CreateDonThueXe.cshtml",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAMUAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-26T13:35:48.248Z",
               "EditorCaption": ""
@@ -838,22 +851,9 @@
               "RelativeDocumentMoniker": "CarRentalManagement_Project\\Controllers\\DonThueXesController.cs",
               "ToolTip": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Controllers\\DonThueXesController.cs",
               "RelativeToolTip": "CarRentalManagement_Project\\Controllers\\DonThueXesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwCcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAUwFkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T13:34:08.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Views\\Xes\\Details.cshtml",
-              "RelativeDocumentMoniker": "CarRentalManagement_Project\\Views\\Xes\\Details.cshtml",
-              "ToolTip": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\Views\\Xes\\Details.cshtml",
-              "RelativeToolTip": "CarRentalManagement_Project\\Views\\Xes\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAABAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T13:30:13.307Z",
               "EditorCaption": ""
             }
           ]

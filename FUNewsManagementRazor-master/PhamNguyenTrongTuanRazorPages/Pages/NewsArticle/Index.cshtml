@@ -1,0 +1,103 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model FUNewsManageSystem.Pages.NewsArticle.IndexModel
+
+@{
+    ViewData["Title"] = "Article Management";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+
+<div class="d-flex justify-content-between align-items-center">
+    <h1>@ViewData["Title"]</h1>
+    <form class="form-inline my-2 my-lg-0 d-flex w-25">
+        <div id="searchInputWrapper">
+            
+        </div>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="searchBtn">Search</button>
+    </form>
+</div>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].NewsArticleId)
+            </th>
+            <th id="titleSortWrapper">
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].Headline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].NewsSource)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].CreatedByName)
+            </th>
+            <th id="dateSortWrapper">
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].UpdatedByName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NewsArticle[0].NewsStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="newsArticlesBody">
+        
+    </tbody>
+</table>
+<nav aria-label="pagination">
+    <ul class="pagination" id="paginationSection">
+        
+    </ul>
+</nav>
+
+@section Scripts {
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/site.js"></script>
+    <script>
+        $(document).on("click", "#searchBtn", function(event){
+            event.preventDefault();
+            var inputString = $("#searchInput").val();
+               
+            LoadNewsArticle("", inputString);
+        });
+
+        $(document).on("keypress", "#searchInput", function(event){
+            if(event.which == 13) {
+                event.preventDefault();
+                $("#searchBtn").click();
+            }
+        });
+
+        $(document).on("click", "#titleSort", function(event){
+            const inputString = $("#searchInput").val();
+            const titleSortParam = $(this).data("titlesortparam");
+            LoadNewsArticle(titleSortParam, inputString);
+        });
+        
+        $(document).on("click", "#dateSort", function(event){
+            const inputString = $("#searchInput").val();
+            const dateSortParam = $(this).data("datesortparam");
+            LoadNewsArticle(dateSortParam, inputString);
+        });
+
+        $(document).on("click", ".page-link", function(event){
+            const inputString = $("#searchInput").val();
+            const currentSort = $(this).data("sortorder");
+            const pageNumber = $(this).data("pagenumber");
+            LoadNewsArticle(currentSort, inputString, pageNumber);
+        });
+    </script>
+}

@@ -1,0 +1,123 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using ServiceLayer.Enums
+@model FUNewsManageSystem.Pages.Category.IndexModel
+
+@{
+    ViewData["Title"] = "Category Management";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<div class="d-flex justify-content-between align-items-center">
+    <h1>@ViewData["Title"]</h1>
+    <form class="form-inline my-2 my-lg-0 d-flex w-25" asp-page="/Category/Index" method="get">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search name or email" aria-label="Search" name="searchString" value="@ViewData["CurrentFilter"]" />
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</div>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="/Category/Index" asp-route-sortOrder="@ViewData["IdSortParam"]">
+                    @Html.DisplayNameFor(model => model.Category[0].CategoryId)
+                </a>
+            </th>
+            <th>
+                <a asp-page="/Category/Index" asp-route-sortOrder="@ViewData["NameSortParam"]">
+                    @Html.DisplayNameFor(model => model.Category[0].CategoryName)
+                </a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].CategoryDesciption)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].ParentCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].CategoryStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category[0].NewsArticleCount)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Category)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td style="width: 40%">
+                    @Html.DisplayFor(modelItem => item.CategoryDesciption)
+                </td>
+                <td>
+                    @if (item.ParentCategory == null)
+                    {
+                        <span>N/A</span>
+                    }
+                    else
+                    {
+                        @Html.DisplayFor(modelItem => item.ParentCategory.CategoryName)
+                    }
+                </td>
+                <td>
+                    <span class="@(item.CategoryStatus != CategoryStatus.Inactive ? "badge badge-success" : "badge badge-danger")">@item.CategoryStatus</span>
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NewsArticleCount)
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@item.CategoryId">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@item.CategoryId">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@item.CategoryId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<nav aria-label="pagination">
+    <ul class="pagination">
+        <li class="page-item @(!Model.Category.HasPreviousPage ? "disabled" : "")">
+            <a class="page-link"
+               asp-page="./Index"
+               aria-disabled="@(!Model.Category.HasPreviousPage ? "true" : "false")"
+               asp-route-sortOrder="@ViewData["CurrentSort"]"
+               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+               asp-route-pageNumber="@(Model.Category.PageIndex - 1)">
+                Previous
+            </a>
+        </li>
+
+        @for (var i = 1; i <= Model.Category.TotalPages; i++)
+        {
+            <li class="page-item @(i == Model.Category.PageIndex ? "active" : "")" aria-current="page">
+                <a class="page-link"
+                   asp-page="./Index"
+                   aria-current="@(i == Model.Category.PageIndex ? "page" : "")"
+                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+                   asp-route-pageNumber="@i">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(!Model.Category.HasNextPage ? "disabled" : "")">
+            <a class="page-link"
+               asp-page="./Index"
+               aria-disabled="@(!Model.Category.HasNextPage ? "true" : "false")"
+               asp-route-sortOrder="@ViewData["CurrentSort"]"
+               asp-route-currentFilter="@ViewData["CurrentFilter"]"
+               asp-route-pageNumber="@(Model.Category.PageIndex + 1)">
+                Next
+            </a>
+        </li>
+    </ul>
+</nav>

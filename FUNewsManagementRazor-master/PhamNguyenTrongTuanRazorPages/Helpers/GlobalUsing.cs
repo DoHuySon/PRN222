@@ -1,0 +1,9 @@
+﻿global using AutoMapper;
+global using Microsoft.AspNetCore.Authorization;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.RazorPages;
+global using Microsoft.EntityFrameworkCore;
+global using FUNewsManageSystem.Helpers;
+global using Repository.Data;
+global using Repository.Entities;
+global using System.ComponentModel.DataAnnotations;

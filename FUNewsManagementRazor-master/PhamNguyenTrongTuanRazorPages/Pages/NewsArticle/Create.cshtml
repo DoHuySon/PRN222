@@ -1,0 +1,84 @@
+﻿@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@using ServiceLayer.Models
+@model FUNewsManageSystem.Pages.NewsArticle.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>NewsArticle</h4>
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NewsArticle.NewsTitle" class="control-label"></label>
+                <input asp-for="NewsArticle.NewsTitle" class="form-control" />
+                <span asp-validation-for="NewsArticle.NewsTitle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewsArticle.Headline" class="control-label"></label>
+                <input asp-for="NewsArticle.Headline" class="form-control" />
+                <span asp-validation-for="NewsArticle.Headline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewsArticle.NewsContent" class="control-label"></label>
+                <textarea asp-for="NewsArticle.NewsContent" class="form-control" cols="4"></textarea>
+                <span asp-validation-for="NewsArticle.NewsContent" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NewsArticle.NewsSource" class="control-label"></label>
+                <input asp-for="NewsArticle.NewsSource" class="form-control" />
+                <span asp-validation-for="NewsArticle.NewsSource" class="text-danger"></span>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label asp-for="NewsArticle.CategoryId" class="control-label"></label>
+                    <select asp-for="NewsArticle.CategoryId" class="form-control" asp-items="Model.SelectListItems"></select>
+                    <span asp-validation-for="NewsArticle.CategoryId" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="NewsArticle.NewsStatus" class="control-label"></label>
+                    <select asp-for="NewsArticle.NewsStatus" class="form-control" style="cursor: pointer !important">
+                        <option value="Active">Active</option>
+                        <option value="Inactive">Inactive</option>
+                    </select>
+                    <span asp-validation-for="NewsArticle.NewsStatus" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label">Select Tags</label>
+                <div class="selectgroup selectgroup-pills">
+                    @foreach (var tag in Model.TagDtos)
+                    {
+                        <label class="selectgroup-item">
+                            <input type="checkbox"
+                                   name="NewsArticle.TagIds"
+                                   value="@tag.TagId"
+                                   class="selectgroup-input"
+                            @(Model.NewsArticle.TagIds.Contains(tag.TagId) ? "checked" : "") />
+                            <span class="selectgroup-button">@tag.TagName</span>
+                        </label>
+                    }
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,19 @@
+{
+  "version": "3.0",
+  "defaultProvider": "unpkg",
+  "libraries": [
+    {
+      "library": "@microsoft/signalr@8.0.7",
+      "destination": "wwwroot/lib/signalr/",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.min.js"
+      ]
+    },
+    {
+      "provider": "cdnjs",
+      "library": "sweetalert2@11.15.10",
+      "destination": "wwwroot/lib/sweetalert2/"
+    }
+  ]
+}
