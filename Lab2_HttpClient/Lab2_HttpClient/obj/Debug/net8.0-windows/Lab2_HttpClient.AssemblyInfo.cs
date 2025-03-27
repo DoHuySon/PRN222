@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Lab2_HttpClient")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e63a6f44b51a9fca46f78fea264f02182a85de5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5029e43630a102c4d0be779094349fb575758e2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Lab2_HttpClient")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Lab2_HttpClient")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

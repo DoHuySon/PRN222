@@ -1,0 +1,74 @@
+﻿@page
+@model SP25_PRN222_Restaurant.Pages.TableManagementModel
+@{
+    ViewData["Title"] = "Table Management";
+}
+
+<div class="container mt-5">
+    <h2>Table Management</h2>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert @(Model.Message.Contains("successfully") ? "alert-success" : "alert-danger")" role="alert">
+            @Model.Message
+        </div>
+    }
+
+    @if (Model.IsAdmin)
+    {
+        <h4>Add a New Table</h4>
+        <form method="post" class="mb-4">
+            <div class="form-group mb-3">
+                <label asp-for="TableNumber" class="form-label">Table Number</label>
+                <input asp-for="TableNumber" class="form-control" type="number" min="1" />
+                <span asp-validation-for="TableNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Seats" class="form-label">Number of Seats</label>
+                <input asp-for="Seats" class="form-control" type="number" min="1" />
+                <span asp-validation-for="Seats" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Add Table</button>
+        </form>
+    }
+    else
+    {
+        <p>Only admins can add tables. You can view the table list below.</p>
+    }
+
+    <h4>All Tables</h4>
+    @if (Model.Tables.Any())
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Table Number</th>
+                    <th>Seats</th>
+                    <th>Status</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var table in Model.Tables)
+                {
+                    <tr>
+                        <td>@table.TableNumber</td>
+                        <td>@table.Seats</td>
+                        <td>@table.Status</td>
+                        <td>@table.CreatedAt</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No tables available.</p>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

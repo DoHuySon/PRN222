@@ -1,0 +1,264 @@
+﻿@model CarRentalManagement_Project.Models.Xe
+
+@{
+    ViewData["Title"] = "Chi tiết xe";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết xe - @Model.MaLoaiXeNavigation?.TenLoaiXe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .car-details-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            transition: transform 0.3s ease;
+        }
+
+            .car-details-container:hover {
+                transform: translateY(-5px);
+            }
+
+        .car-image {
+            flex: 1;
+            min-width: 400px;
+            position: relative;
+            overflow: hidden;
+            background: #f4f4f4;
+            border-radius: 15px;
+            margin: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+            .car-image img {
+                width: 100%;
+                height: 400px;
+                object-fit: cover;
+                border-radius: 15px;
+                transition: transform 0.5s ease, opacity 0.3s ease;
+            }
+
+            .car-image:hover img {
+                transform: scale(1.1);
+                opacity: 0.9;
+            }
+
+            .car-image::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+                border-radius: 15px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                pointer-events: none;
+            }
+
+            .car-image:hover::before {
+                opacity: 1;
+            }
+
+            .car-image::after {
+                content: '🔍 Xem chi tiết';
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                color: white;
+                font-size: 1rem;
+                font-weight: 500;
+                opacity: 0;
+                transform: translateY(20px);
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+
+            .car-image:hover::after {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        .car-info {
+            flex: 1;
+            padding: 30px;
+            min-width: 300px;
+            background: #fff;
+            position: relative;
+        }
+
+            .car-info h1 {
+                font-size: 2.2rem;
+                color: #2c3e50;
+                margin-bottom: 10px;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .car-info .price-tag {
+                font-size: 1.5rem;
+                color: #e74c3c;
+                font-weight: 600;
+                margin-bottom: 20px;
+                display: inline-block;
+                background: #ffe6e6;
+                padding: 5px 15px;
+                border-radius: 20px;
+            }
+
+            .car-info p {
+                font-size: 1rem;
+                color: #7f8c8d;
+                margin-bottom: 15px;
+                line-height: 1.6;
+            }
+
+                .car-info p strong {
+                    color: #2c3e50;
+                    font-weight: 600;
+                }
+
+            .car-info .status {
+                display: inline-block;
+                padding: 5px 15px;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                font-weight: 500;
+                margin-bottom: 15px;
+            }
+
+                .car-info .status.available {
+                    background: #e8f5e9;
+                    color: #2ecc71;
+                }
+
+                .car-info .status.unavailable {
+                    background: #ffebee;
+                    color: #e74c3c;
+                }
+
+        .action-buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #3498db;
+            color: white;
+            border: none;
+        }
+
+            .btn-primary:hover {
+                background: #2980b9;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            }
+
+        .btn-secondary {
+            background: #ecf0f1;
+            color: #2c3e50;
+            border: 1px solid #dcdcdc;
+        }
+
+            .btn-secondary:hover {
+                background: #dfe6e9;
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            }
+
+
+        .car-image {
+            min-width: 100%;
+            margin: 10px 0;
+        }
+
+            .car-image img {
+                height: 300px;
+            }
+
+        .car-info {
+            padding: 20px;
+        }
+
+            .car-info h1 {
+                font-size: 1.8rem;
+            }
+
+            .car-info .price-tag {
+                font-size: 1.2rem;
+            }
+
+        }
+
+        .car-image img {
+            opacity: 0;
+            animation: fadeIn 1s ease forwards;
+        }
+
+
+        to {
+            opacity: 1;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="car-details-container">
+        <div class="car-image">
+            <img src="@(string.IsNullOrEmpty(Model.HinhAnh) ? "https://via.placeholder.com/800x600.png?text=Xe" : Model.HinhAnh)" alt="Hình ảnh xe" />
+        </div>
+        <div class="car-info">
+            <h1>@(Model.MaLoaiXeNavigation?.TenLoaiXe ?? "Không có loại xe")</h1>
+            <div class="price-tag">@Html.DisplayFor(model => model.GiaThueMotNgay)/ngày</div>
+            <div class="status @(Model.TrangThai == "Có sẵn" ? "available" : "unavailable")">
+                @Html.DisplayFor(model => model.TrangThai)
+            </div>
+            <p><strong>Biển số xe:</strong> @Html.DisplayFor(model => model.BienSoXe)</p>
+            <p><strong>Hãng xe:</strong> @Html.DisplayFor(model => model.HangXe)</p>
+            <p><strong>Màu xe:</strong> @Html.DisplayFor(model => model.MauXe)</p>
+            <p><strong>Năm sản xuất:</strong> @Html.DisplayFor(model => model.NamSanXuat)</p>
+            <p><strong>Số chỗ ngồi:</strong> @Html.DisplayFor(model => model.SoChoNgoi)</p>
+            <p><strong>Mô tả loại xe:</strong> @(Model.MaLoaiXeNavigation?.MoTa ?? "Không có mô tả")</p>
+            <div class="action-buttons">
+                <a href="@Url.Action("Index", "Xes")" class="btn btn-secondary">Quay lại</a>
+                <a href="@Url.Action("CreateDonThueXe", "DonThueXes", new { maXe = Model.MaXe })" class="btn btn-primary">Đặt xe ngay</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

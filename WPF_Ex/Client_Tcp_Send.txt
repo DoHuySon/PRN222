@@ -1,0 +1,81 @@
+====================================================| Json
+
+private void Button_Click_SendToServer(object sender, RoutedEventArgs e)
+{
+    try
+    {
+        var starsInfo = stars;
+        string jsonData = JsonSerializer.Serialize(starsInfo, new JsonSerializerOptions{ WriteIndented = true });
+        string host = "127.0.0.1";
+        int port = 5000;
+        int bytes;
+        try
+        {
+            TcpClient client = new TcpClient(host, port);
+            NetworkStream stream = null;
+            while (true)
+            {
+                Byte[] data = System.Text.Encoding.ASCII.GetBytes($"{jsonData}");
+                stream = client.GetStream();
+                stream.Write(data, 0, data.Length);
+                MessageBox.Show("Thành công", "Send to server");
+                break;
+            }
+            client.Close();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Send to server");
+        }
+    } catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Send to server");
+    }
+}
+
+====================================================| XML
+
+private void Button_Click_SendToServer(object sender, RoutedEventArgs e)
+{
+    try
+    {
+        List<Star> starsInfo = stars; // stars là danh sách đã có của bạn
+        
+        // Sử dụng XmlSerializer với root attribute để đặt tên cho phần tử gốc
+        XmlSerializer serializer = new XmlSerializer(typeof(List<Star>), new XmlRootAttribute("Stars"));
+        string xmlData;
+        
+        using (StringWriter stringWriter = new StringWriter())
+        {
+            using (XmlWriter xmlWriter = XmlWriter.Create(stringWriter, new XmlWriterSettings { Indent = true }))
+            {
+                serializer.Serialize(xmlWriter, starsInfo);
+                xmlData = stringWriter.ToString();
+            }
+        }
+        
+        string host = "127.0.0.1";
+        int port = 5000;
+        
+        try
+        {
+            TcpClient client = new TcpClient(host, port);
+            NetworkStream stream = null;
+            
+            Byte[] data = System.Text.Encoding.ASCII.GetBytes(xmlData);
+            stream = client.GetStream();
+            stream.Write(data, 0, data.Length);
+            MessageBox.Show("Thành công", "Send to server");
+            
+            client.Close();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Send to server");
+        }
+    } 
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Send to server");
+    }
+}

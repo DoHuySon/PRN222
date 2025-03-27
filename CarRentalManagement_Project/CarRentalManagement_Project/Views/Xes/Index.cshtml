@@ -1,0 +1,252 @@
+﻿@model IEnumerable<CarRentalManagement_Project.Models.Xe>
+
+@{
+    ViewData["Title"] = "Danh sách xe";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách xe</title>
+    <!-- Thêm CSS của bạn tại đây nếu cần -->
+    <style>
+        /* CSS của bạn (nếu có) */
+        .filter-container {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .filter-container label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-right: 10px;
+            color: #333;
+        }
+
+        .filter-container select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-container select:hover,
+        .filter-container select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .filter-container select option {
+            padding: 5px;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .car-card:hover {
+            transform: scale(1.03);
+        }
+
+        .car-image {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+        .car-image img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .car-details {
+            padding: 15px;
+        }
+
+        .car-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .car-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .car-specs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .car-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .rental-tags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            color: #ffc107;
+        }
+
+        .rating span {
+            margin-left: 5px;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer; /* Thêm con trỏ để người dùng biết có thể nhấn */
+        }
+
+            .car-card:hover {
+                transform: scale(1.03);
+            }
+    </style>
+</head>
+<body>
+    <form method="get" action="@Url.Action("FilterCar", "Xes")" class="filter-container">
+        <label for="MaLoaiXe">🚗 Chọn loại xe:</label>
+        <select name="MaLoaiXe" id="MaLoaiXe" onchange="this.form.submit()">
+            <option value="">Tất cả</option>
+            @if (ViewBag.LoaiXeList != null)
+            {
+                @foreach (var loaiXe in ViewBag.LoaiXeList as List<CarRentalManagement_Project.Models.LoaiXe>)
+                {
+                    var isSelected = ViewBag.SelectedMaLoaiXe == loaiXe.MaLoaiXe ? "selected" : "";
+                    <option value="@loaiXe.MaLoaiXe" selected="@isSelected">
+                        @loaiXe.TenLoaiXe
+                    </option>
+                }
+            }
+        </select>
+        
+    </form>
+    <form method="get" action="@Url.Action("FilterByStatus", "Xes")" class="filter-container">
+        <input type="hidden" name="nocache" value="@DateTime.Now.Ticks" />
+        <input type="hidden" name="MaLoaiXe" value="@ViewBag.SelectedMaLoaiXe" /> <!-- Giữ trạng thái MaLoaiXe -->
+        <label for="TrangThai">📊 Trạng thái:</label>
+        <select name="TrangThai" id="TrangThai" onchange="this.form.submit()">
+            <option value="">Tất cả</option>
+            @{
+                string[] trangThaiList = new[] { "Sẵn Sàng", "Đang Thuê", "Bảo Dưỡng" };
+                foreach (var trangThai in trangThaiList)
+                {
+                    if (ViewBag.SelectedTrangThai == trangThai)
+                    {
+                        <option value="@trangThai" selected>@trangThai</option>
+                    }
+                    else
+                    {
+                        <option value="@trangThai">@trangThai</option>
+                    }
+                }
+            }
+        </select>
+    </form>
+    <div class="car-grid">
+        @if (Model != null && Model.Any())
+        {
+            @foreach (var item in Model)
+            {
+                if (item != null)
+                {
+                    <a href="@Url.Action("Details", "Xes", new { id = item.MaXe })" style="text-decoration: none; color: inherit;">
+                        <div class="car-card">
+                            <div class="car-image">
+                                <img src="@Html.DisplayFor(modelItem => item.HinhAnh)" alt="Hình ảnh xe" />
+                            </div>
+                            <div class="car-details">
+                                <div class="car-title">
+                                    @(item.MaLoaiXeNavigation?.TenLoaiXe ?? "Không có loại xe")
+                                </div>
+                                <div class="car-info">
+                                    <div class="rental-tags">
+                                        <div class="tag">
+                                            @(item.MaLoaiXeNavigation?.MoTa ?? "Không có mô tả")
+                                        </div>
+                                        <div class="tag">
+                                            @Html.DisplayFor(modelItem => item.TrangThai)
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="car-specs">
+                                    <span>@Html.DisplayFor(modelItem => item.MauXe)</span>
+                                    <span>@Html.DisplayFor(modelItem => item.HangXe)</span>
+                                    <span>@Html.DisplayFor(modelItem => item.NamSanXuat)</span>
+                                </div>
+                                <div class="car-price">
+                                    <div class="rating">
+                                        ★ 5.0
+                                        <span>(45 chuyến)</span>
+                                    </div>
+                                    <div class="price">
+                                        @Html.DisplayFor(modelItem => item.GiaThueMotNgay)/ngày
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                }
+            }
+        }
+        else
+        {
+            <p>Không có xe nào để hiển thị.</p>
+        }
+    </div>
+</body>
+</html>

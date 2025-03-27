@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Semester7\\PRN222\\Chat_Readtime\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|d:\\semester7\\prn222\\chat_readtime\\chat_readtime\\pages\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|solutionrelative:chat_readtime\\pages\\chat\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|d:\\semester7\\prn222\\chat_readtime\\chat_readtime\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|solutionrelative:chat_readtime\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|d:\\semester7\\prn222\\chat_readtime\\chat_readtime\\pages\\controller\\customfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|solutionrelative:chat_readtime\\pages\\controller\\customfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|d:\\semester7\\prn222\\chat_readtime\\chat_readtime\\pages\\controller\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AFB93DDB-058E-48B0-97C8-E4F572EDB214}|Chat_Readtime\\Chat_Readtime.csproj|solutionrelative:chat_readtime\\pages\\controller\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Chat\\Index.cshtml",
+              "RelativeDocumentMoniker": "Chat_Readtime\\Pages\\Chat\\Index.cshtml",
+              "ToolTip": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Chat\\Index.cshtml",
+              "RelativeToolTip": "Chat_Readtime\\Pages\\Chat\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T04:28:29.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Chat_Readtime\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Chat_Readtime\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-12T04:23:48.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomFilter.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Controller\\CustomFilter.cs",
+              "RelativeDocumentMoniker": "Chat_Readtime\\Pages\\Controller\\CustomFilter.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Controller\\CustomFilter.cs",
+              "RelativeToolTip": "Chat_Readtime\\Pages\\Controller\\CustomFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T04:09:04.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Controller\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Chat_Readtime\\Pages\\Controller\\ChatHub.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\Chat_Readtime\\Chat_Readtime\\Pages\\Controller\\ChatHub.cs",
+              "RelativeToolTip": "Chat_Readtime\\Pages\\Controller\\ChatHub.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T03:53:16.035Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

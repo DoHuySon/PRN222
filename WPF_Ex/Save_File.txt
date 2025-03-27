@@ -1,0 +1,57 @@
+============================================================================================= SAVE FILE
+private void Button_SaveToFile_Click(object sender, RoutedEventArgs e)
+{
+    try
+    {
+        // Khởi tạo SaveFileDialog
+        SaveFileDialog dialog = new SaveFileDialog();
+        
+        // Thiết lập các thuộc tính của SaveFileDialog
+        dialog.Filter = "JSON files (*.json)|*.json|XML files (*.xml)|*.xml|All files (*.*)|*.*";
+        dialog.DefaultExt = "json";
+        dialog.Title = "Lưu danh sách";
+        
+        // Hiển thị dialog để người dùng chọn vị trí và tên file
+        bool? result = dialog.ShowDialog();
+        
+        // Nếu người dùng đã chọn file và nhấn OK
+        if (result == true)
+        {
+            string filePath = dialog.FileName;
+            string extension = Path.GetExtension(filePath).ToLower();
+            
+            // Giả sử danh sách đối tượng được lưu trong biến yourObjectList
+            var objectList = yourObjectList;
+            
+            if (extension == ".json")
+            {
+                // Lưu dưới dạng JSON
+                string jsonData = JsonSerializer.Serialize(objectList, new JsonSerializerOptions
+                { 
+                    WriteIndented = true 
+                });
+                
+                File.WriteAllText(filePath, jsonData);
+            }
+            else if (extension == ".xml")
+            {
+                // Lưu dưới dạng XML
+                XmlSerializer serializer = new XmlSerializer(objectList.GetType(), new XmlRootAttribute("Items"));
+                
+                using (FileStream fs = new FileStream(filePath, FileMode.Create))
+                {
+                    using (XmlWriter writer = XmlWriter.Create(fs, new XmlWriterSettings { Indent = true }))
+                    {
+                        serializer.Serialize(writer, objectList);
+                    }
+                }
+            }
+            
+            MessageBox.Show($"Đã lưu thành công vào {filePath}", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+    }
+    catch (Exception ex)
+    {
+        MessageBox.Show($"Lỗi khi lưu file: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+    }
+}

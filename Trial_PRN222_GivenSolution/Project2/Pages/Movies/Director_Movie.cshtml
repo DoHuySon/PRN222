@@ -1,0 +1,92 @@
+﻿@page
+@model Project2.Pages.Movies.Director_MovieModel
+@{
+    ViewData["Title"] = "Director Movie";
+}
+
+<style>
+    .selected-director {
+        font-weight: bold;
+        color: blue;
+        font-size: 18px;
+    }
+</style>
+
+<h2>List of Movies</h2>
+
+<table border="0" width="100%" cellpadding="10">
+    <tr>
+        <td valign="top" width="10%">
+            <h4>Directors</h4>
+            @foreach (var director in Model.Directors)
+            {
+                <a href="?SelectedDirectorId=@director.Id" class="@(Model.SelectedDirectorId == director.Id ? "selected-director" : "")">@director.FullName</a>
+                <br />
+            }
+        </td>
+
+        <td valign="top" width="90%">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Release Date</th>
+                        <th>Description</th>
+                        <th>Language</th>
+                        <th>Director</th>
+                        <th>Producer</th>
+                        <th>Stars</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var movie in Model.Movies)
+                    {
+                        <tr>
+                            <td>@movie.Title</td>
+                            <td>@movie.ReleaseDate</td>
+                            <td>@movie.Description</td>
+                            <td>@movie.Language</td>
+                            <td>@movie.Director.FullName</td>
+                            <td>@movie.Producer.Name</td>
+                            <td>
+                                @foreach (var star in movie.Stars)
+                                {
+                                    @star.FullName
+                                    <br />
+                                }
+
+                            </td>
+                            <td>
+                                @* <form method="post" action="@Url.Page("Director_Movie", new { handler = "Delete", movieId = movie.Id })" *@
+                                @*       onsubmit="return confirm('Are you sure to delete?')"> *@
+                                @*     <button type="submit">Delete</button> *@
+                                @* </form> *@
+                                <a href="@Url.Page("Director_Movie", "Delete", new { movieId = movie.Id })" onclick="return confirm('Are you sure to delete?')">Delete</a>
+                            </td>
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/5.0.10/signalr.min.js"></script>
+<script>
+    const connection = new signalR.HubConnectionBuilder()
+        .withUrl("/movieHub")
+        .build();
+
+    connection.start()
+        .then(() => console.log("Success"))
+        .catch(err => console.error("Error: ", err));
+
+    connection.on("RefreshPage", () => {
+        location.href = "/Movies/Director_Movie"
+    });
+</script>

@@ -1,0 +1,103 @@
+1. Vào dependences chọn nuget package
+- Add design vào dependence 8.0.2: Microsoft.EntityFrameworkCore.Design
+- Add SqlServer 8.0.2: Microsoft.EntityFramework.SqlServer
+=> Xong rebuild
+
+=============================================================================================
+2. GEN MODEL
+
+
+dotnet ef dbcontext scaffold "server =MSI; database = PE_PRN222_Trial;uid=sa;pwd=123;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models
+
+Khi đã có database, và muốn add thêm bảng.
+dotnet ef dbcontext scaffold "server =MSI; database = OnlineLearningIT;uid=sa;pwd=123;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer --output-dir Models -f
+
+
+=> Nếu ra model = Success
+Nếu lỗi, chạy lệnh:
+dotnet restore
+sau đó rebuild lại project
+Lưu ý cd vào Project2
+
+=============================================================================================
+3. Sửa appsettings.json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "MyCnn": "Server=(local);uid=sa;pwd=123;database=DatabaseName"
+  }
+}
+=============================================================================================
+4. SỬA CODE TRONG context.cs
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        var builder = new ConfigurationBuilder()
+                              .SetBasePath(Directory.GetCurrentDirectory())
+                              .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+        IConfigurationRoot configuration = builder.Build();
+        optionsBuilder.UseSqlServer(configuration.GetConnectionString("MyCnn"));
+    }
+=============================================================================================
+5. Add code này vào file main: 
+
+*Giữa: 
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<MyStockContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("OnlineLearningIT"),
+    sqlOptions => sqlOptions.EnableRetryOnFailure())
+);
+
+builder.Services.AddControllersWithViews();
+
+=============================================================================================
+6/ Sửa program:
+
+using Microsoft.EntityFrameworkCore;
+using Project2.Hubs;
+using Project2.Models;
+
+var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<PePrn222TrialContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyCnn"),
+    sqlOptions => sqlOptions.EnableRetryOnFailure())
+);
+
+builder.Services.AddRazorPages(); //Add new
+builder.Services.AddMvc(); //Add new
+builder.Services.AddSession(); //Add new
+builder.Services.AddMemoryCache(); //Add new
+builder.Services.AddSignalR(); //Add new
+
+
+var app = builder.Build();
+app.UseSession();//Add new
+app.MapRazorPages();//Add new
+app.UseHttpsRedirection();//Add new
+app.UseRouting();//Add new
+
+//Config static files
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "lib")),
+    RequestPath = "/lib"
+});
+
+app.MapHub<MovieHub>("/movieHubs");
+
+app.MapGet("/", () => "Hello World!");
+app.Run();
+
+=============================================================================================
+7. Thêm đường dẫn vào properties/launchSetting
+profile/http, dưới 
+
+"applicationUrl": "http://localhost:5186",
+"launchUrl": "Movies/Director_Movie", //Thêm dòng này & định nghĩa router trong pages.

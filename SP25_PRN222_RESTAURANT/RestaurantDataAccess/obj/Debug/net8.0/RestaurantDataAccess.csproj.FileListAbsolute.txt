@@ -1,0 +1,17 @@
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\bin\Debug\net8.0\appsettings.json
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\bin\Debug\net8.0\RestaurantDataAccess.deps.json
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\bin\Debug\net8.0\RestaurantDataAccess.dll
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\bin\Debug\net8.0\RestaurantDataAccess.pdb
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\bin\Debug\net8.0\RestaurantBusiness.dll
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\bin\Debug\net8.0\RestaurantBusiness.pdb
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.csproj.AssemblyReference.cache
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.AssemblyInfoInputs.cache
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.AssemblyInfo.cs
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.csproj.CoreCompileInputs.cache
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.sourcelink.json
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\Restaura.5BA86C71.Up2Date
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.dll
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\refint\RestaurantDataAccess.dll
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\RestaurantDataAccess.pdb
+D:\Semester7\PRN222\SP25_PRN222_RESTAURANT\RestaurantDataAccess\obj\Debug\net8.0\ref\RestaurantDataAccess.dll

@@ -1,0 +1,899 @@
+=====================================================================
+LAYOUT1:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .column-left {
+            float: left;
+            width: 20%;
+        }
+
+        .column-right {
+            float: left;
+            width: 80%;
+        }
+
+        .director-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .director-list li {
+                margin-bottom: 8px;
+            }
+
+            .director-list a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+
+                .director-list a:hover {
+                    text-decoration: underline;
+                }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f8f8f8;
+            font-weight: normal;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .delete-link {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>List of movies</h1>
+
+        <div class="row">
+            <!-- Left column with directors list -->
+            <div class="column-left">
+                <h3>Directors</h3>
+                <ul class="director-list">
+                    <li><a href="#">David Gordon Green</a></li>
+                    <li><a href="#">Aaron Horvath</a></li>
+                    <li><a href="#">David Bruckner</a></li>
+                    <li><a href="#">Mike Barker</a></li>
+                    <li><a href="#">Joseph Kosinski</a></li>
+                </ul>
+            </div>
+
+            <!-- Right column with movies table -->
+            <div class="column-right">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>ReleaseDate</th>
+                            <th>Description</th>
+                            <th>Language</th>
+                            <th>Director</th>
+                            <th>Producer</th>
+                            <th>Stars</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Halloween Ends</td>
+                            <td>10/14/2022</td>
+                            <td>The saga of Michael Myers and Laurie Strode comes to a spine chilling climax in this final installment of this trilogy.</td>
+                            <td>English</td>
+                            <td>David Gordon Green</td>
+                            <td>Blumhouse Productions</td>
+                            <td>Jamie Lee Curtis<br>Andi Matichak<br>James Jude Courtney</td>
+                            <td><a href="#" class="delete-link">Delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+=====================================================================
+LAYOUT2: 
+
+@page "/Movies/Director_Movie"
+@model Project2.Pages.Movies.MoviesListModel
+@{
+}
+@using Project2.Models
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data List</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page-title {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* Layout structure */
+        .flex-row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .sidebar {
+            float: left;
+            width: 20%;
+        }
+
+        .content-main {
+            float: left;
+            width: 80%;
+        }
+
+        /* Navigation/filter list */
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            .nav-list .active-item {
+                background-color: #e6f2ff;
+                font-weight: bold;
+                border-left: 3px solid #0066cc;
+                padding-left: 5px;
+            }
+
+            .nav-list li {
+                margin-bottom: 8px;
+            }
+
+            .nav-list a {
+                color: #0066cc;
+                text-decoration: none;
+            }
+
+                .nav-list a:hover {
+                    text-decoration: underline;
+                }
+
+        /* Data table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-header, .table-cell {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+
+        .table-header {
+            background-color: #f8f8f8;
+            font-weight: normal;
+        }
+
+        .table-row:hover {
+            background-color: #f5f5f5;
+        }
+
+        .action-link {
+            color: #0066cc;
+        }
+
+        /* Alerts and notifications */
+        .notification {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .notification-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .notification-error {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        
+        /* Search and filter area */
+        .search-container {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .search-form {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 14px;
+        }
+        
+        .search-button {
+            padding: 8px 16px;
+            background-color: #0066cc;
+            color: white;
+            border: 1px solid #0066cc;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .search-button:hover {
+            background-color: #0055aa;
+        }
+        
+        .filter-options {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-select {
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #fff;
+            min-width: 120px;
+        }
+        
+        /* Search and filter area */
+        .search-container {
+            margin-bottom: 20px;
+        }
+        
+        .search-form {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+        
+        .search-button {
+            padding: 8px 16px;
+            background-color: #0066cc;
+            color: white;
+            border: 1px solid #0066cc;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        
+        .filter-options {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .filter-select {
+            padding: 6px 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .sidebar, .content-main {
+                width: 100%;
+                float: none;
+            }
+            
+            .search-form {
+                flex-direction: column;
+            }
+            
+            .search-input {
+                border-radius: 4px;
+                margin-bottom: 10px;
+            }
+            
+            .search-button {
+                border-radius: 4px;
+            }
+            
+            .filter-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="page-title">List of movies</h1>
+        <div id="notification-container">
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="notification notification-error">
+                    @TempData["ErrorMessage"]
+                </div>
+            }
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="notification notification-success">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
+        </div>
+        <!-- Search bar -->
+        <div class="search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" class="search-input" placeholder="Search for movies, directors, actors..." name="search">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+            <div class="filter-options">
+                <select class="filter-select" name="genre">
+                    <option value="">All Genres</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                </select>
+
+                <select class="filter-select" name="year">
+                    <option value="">All Years</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+
+                <select class="filter-select" name="language">
+                    <option value="">All Languages</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="french">French</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="korean">Korean</option>
+                </select>
+            </div>
+        </div>
+        <div class="flex-row">
+            <!-- Left column with navigation list -->
+            <div class="sidebar">
+                <h3>Directors</h3>
+                <ul class="nav-list">
+                    <li class="@(string.IsNullOrEmpty(Request.Query["id"]) ? "active-item" : "")">
+                        <a href="/Movies/Director_Movie">All Directors</a>
+                    </li>
+			<li class="@(string.IsNullOrEmpty(Request.Query["id"]) ? "active-item" : "")">
+                        <a href="/Movies/Director_Movie">All Directors</a>
+                    </li>
+			<li class="@(string.IsNullOrEmpty(Request.Query["id"]) ? "active-item" : "")">
+                        <a href="/Movies/Director_Movie">All Directors</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right column with data table -->
+            <div class="content-main">
+                <table id="dataTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th class="table-header">Title</th>
+                            <th class="table-header">ReleaseDate</th>
+                            <th class="table-header">Description</th>
+                            <th class="table-header">Language</th>
+                            <th class="table-header">Producer</th>
+                            <th class="table-header">Director</th>
+                            <th class="table-header">Stars</th>
+                            <th class="table-header"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (Movie mov in Model.Movives)
+                        {
+                            <tr id="item-@mov.Id" class="table-row">
+                                <td class="table-cell">ABC</td>
+                                <td class="table-cell">@(mov.ReleaseDate.HasValue ? mov.ReleaseDate.Value.ToString("dd/MM/yyyy") : "")</td>
+                                <td class="table-cell">ABC</td>
+                                <td class="table-cell">ABC</td>
+                                <td class="table-cell">ABC</td>
+                                <td class="table-cell">ABC</td>
+                                <td class="table-cell">ABC</td>
+                                <td class="table-cell">
+                                    <a href="javascript:void(0);" class="action-link" data-item-id="@mov.Id">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+ </body>
+</html>
+
+=====================================================================
+LAYOUT3: 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Lookup</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        
+        .page-title {
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+        
+        /* Search area styling */
+        .search-container {
+            margin-bottom: 20px;
+        }
+        
+        .search-form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        
+        .search-input {
+            padding: 8px 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            min-width: 300px;
+        }
+        
+        .search-button {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .search-button:hover {
+            background-color: #e0e0e0;
+        }
+        
+        /* Data table styling */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .data-table th {
+            text-align: left;
+            font-size: 18px;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .data-table td {
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .action-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .action-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            .search-form {
+                flex-direction: column;
+            }
+            
+            .search-input {
+                margin-right: 0;
+                margin-bottom: 10px;
+                width: 100%;
+                min-width: unset;
+            }
+            
+            .search-button {
+                width: 100%;
+            }
+            
+            .data-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="page-title">User Lookup</h1>
+        
+        <div class="search-container">
+            <form class="search-form" action="#" method="get">
+                <input type="text" class="search-input" placeholder="Enter user full name to search">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Membership Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>john.doe@example.com</td>
+                    <td>1/10/2021</td>
+                    <td><a href="#" class="action-link">View Details</a></td>
+                </tr>
+             </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+=======================================
+LAYOUT4:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screening Schedule</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+        }
+        
+        .page-title {
+            font-size: 28px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        /* Date picker and button */
+        .filter-container {
+            margin-bottom: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        
+        .date-input {
+            padding: 6px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            font-family: inherit;
+        }
+        
+        .action-button {
+            padding: 6px 15px;
+            font-size: 14px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        
+        .action-button:hover {
+            background-color: #e0e0e0;
+        }
+        
+        /* Data table styling */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .data-table th {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+        
+        .data-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        .data-table tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .data-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .data-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive styles */
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="filter-container">
+            <input type="date" class="date-input" value="2023-10-24">
+            <button type="button" class="action-button">Get Schedule</button>
+        </div>
+        
+        <h1 class="page-title">Screening schedule on 10/24/2023</h1>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>ScheduleId</th>
+                    <th>Room</th>
+                    <th>TimeSlot</th>
+                    <th>Movie</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>284</td>
+                    <td>Room A</td>
+                    <td>15:00:00 - 17:00:00</td>
+                    <td><a href="#" class="data-link">Pulp Fiction</a></td>
+                    <td>Special event</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+=======================================
+LAYOUT5:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <style>
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.4;
+        }
+        
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .page-title {
+            font-size: 32px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        /* Filter container */
+        .filter-container {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .filter-select {
+            padding: 6px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            min-width: 200px;
+        }
+        
+        .filter-button {
+            padding: 6px 15px;
+            font-size: 14px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 0;
+            cursor: pointer;
+        }
+        
+        .filter-button:hover {
+            background-color: #e0e0e0;
+        }
+        
+        /* Data table styling */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .data-table th {
+            text-align: left;
+            font-weight: bold;
+            padding: 8px 10px 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .data-table td {
+            padding: 8px 10px 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .data-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .data-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive styles */
+       
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="page-title">Employee List Page</h1>
+        
+        <div class="filter-container">
+            <select class="filter-select">
+                <option>Select one departments</option>
+                <option>Software Development</option>
+                <option>Human Resources</option>
+                <option>Quality Assurance</option>
+                <option>IT Support</option>
+                <option>Sales</option>
+            </select>
+            <button type="button" class="filter-button">Filter</button>
+        </div>
+        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Date of Birth</th>
+                    <th>Department</th>
+                    <th>Position</th>
+                    <th>Hire date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Employee Name"><a href="#" class="data-link">John Doe</a></td>
+                    <td data-label="Date of Birth">15/02/1985</td>
+                    <td data-label="Department">Software Development</td>
+                    <td data-label="Position">Senior Developer</td>
+                    <td data-label="Hire date">01/03/2010</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

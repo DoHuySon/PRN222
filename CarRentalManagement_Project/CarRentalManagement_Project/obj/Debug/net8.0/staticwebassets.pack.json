@@ -1,0 +1,349 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\CarRentalManagement_Project.bundle.scp.css",
+      "PackagePath": "staticwebassets\\CarRentalManagement_Project.ccnfmov5ss.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\audi-a6.jpg",
+      "PackagePath": "staticwebassets\\images\\audi-a6.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\bmw-x5.jpg",
+      "PackagePath": "staticwebassets\\images\\bmw-x5.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\chevrolet-captiva.jpg",
+      "PackagePath": "staticwebassets\\images\\chevrolet-captiva.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\ford-suv.jpg",
+      "PackagePath": "staticwebassets\\images\\ford-suv.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\honda-city.jpg",
+      "PackagePath": "staticwebassets\\images\\honda-city.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\hyundai-santafe.jpg",
+      "PackagePath": "staticwebassets\\images\\hyundai-santafe.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\jeep-wrangler.jpg",
+      "PackagePath": "staticwebassets\\images\\jeep-wrangler.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\kia-morning.jpg",
+      "PackagePath": "staticwebassets\\images\\kia-morning.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\landrover-discovery.jpg",
+      "PackagePath": "staticwebassets\\images\\landrover-discovery.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\lexus-rx.jpg",
+      "PackagePath": "staticwebassets\\images\\lexus-rx.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\mazda-3.jpg",
+      "PackagePath": "staticwebassets\\images\\mazda-3.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\mercedes-c-class.jpg",
+      "PackagePath": "staticwebassets\\images\\mercedes-c-class.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\nissan-altima.jpg",
+      "PackagePath": "staticwebassets\\images\\nissan-altima.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\peugeot-3008.jpg",
+      "PackagePath": "staticwebassets\\images\\peugeot-3008.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\porsche-911.jpg",
+      "PackagePath": "staticwebassets\\images\\porsche-911.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\suzuki-xl7.jpg",
+      "PackagePath": "staticwebassets\\images\\suzuki-xl7.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\tesla-model-3.jpg",
+      "PackagePath": "staticwebassets\\images\\tesla-model-3.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\toyota-sedan.jpg",
+      "PackagePath": "staticwebassets\\images\\toyota-sedan.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\vinfast-lux-a.jpg",
+      "PackagePath": "staticwebassets\\images\\vinfast-lux-a.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\images\\volvo-xc60.jpg",
+      "PackagePath": "staticwebassets\\images\\volvo-xc60.jpg"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Semester7\\PRN222\\CarRentalManagement_Project\\CarRentalManagement_Project\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CarRentalManagement_Project.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.CarRentalManagement_Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.CarRentalManagement_Project.props",
+      "PackagePath": "build\\CarRentalManagement_Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.CarRentalManagement_Project.props",
+      "PackagePath": "buildMultiTargeting\\CarRentalManagement_Project.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.CarRentalManagement_Project.props",
+      "PackagePath": "buildTransitive\\CarRentalManagement_Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

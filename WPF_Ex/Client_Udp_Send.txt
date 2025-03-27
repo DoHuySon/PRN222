@@ -1,0 +1,91 @@
+====================================================| Json
+private void Button_Click_SendToServer(object sender, RoutedEventArgs e)
+{
+    try
+    {
+        var starsInfo = stars;
+        string jsonData = JsonSerializer.Serialize(starsInfo, new JsonSerializerOptions{ WriteIndented = true });
+        string host = "127.0.0.1";
+        int port = 5000;
+        
+        try
+        {
+            // Tạo đối tượng UdpClient thay vì TcpClient
+            UdpClient udpClient = new UdpClient();
+            
+            // Chuyển đổi dữ liệu thành mảng byte
+            Byte[] data = System.Text.Encoding.ASCII.GetBytes(jsonData);
+            
+            // Gửi dữ liệu đến máy chủ
+            udpClient.Send(data, data.Length, host, port);
+            
+            // Đóng kết nối
+            udpClient.Close();
+            
+            MessageBox.Show("Thành công", "Send to server");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Send to server");
+        }
+    } 
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Send to server");
+    }
+}
+====================================================| XML
+using System.Xml;
+using System.Xml.Serialization;
+using System.IO;
+using System.Collections.Generic;
+using System.Net.Sockets;
+
+private void Button_Click_SendToServer(object sender, RoutedEventArgs e)
+{
+    try
+    {
+        var starsInfo = stars;
+        
+        // Chuyển đổi sang XML thay vì JSON
+        XmlSerializer serializer = new XmlSerializer(typeof(List<Star>), new XmlRootAttribute("Stars"));
+        string xmlData;
+        
+        using (StringWriter stringWriter = new StringWriter())
+        {
+            using (XmlWriter xmlWriter = XmlWriter.Create(stringWriter, new XmlWriterSettings { Indent = true }))
+            {
+                serializer.Serialize(xmlWriter, starsInfo);
+                xmlData = stringWriter.ToString();
+            }
+        }
+        
+        string host = "127.0.0.1";
+        int port = 5000;
+        
+        try
+        {
+            // Tạo đối tượng UdpClient
+            UdpClient udpClient = new UdpClient();
+            
+            // Chuyển đổi dữ liệu XML thành mảng byte
+            Byte[] data = System.Text.Encoding.ASCII.GetBytes(xmlData);
+            
+            // Gửi dữ liệu đến máy chủ
+            udpClient.Send(data, data.Length, host, port);
+            
+            // Đóng kết nối
+            udpClient.Close();
+            
+            MessageBox.Show("Thành công", "Send to server");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message, "Send to server");
+        }
+    } 
+    catch (Exception ex)
+    {
+        MessageBox.Show(ex.Message, "Send to server");
+    }
+}

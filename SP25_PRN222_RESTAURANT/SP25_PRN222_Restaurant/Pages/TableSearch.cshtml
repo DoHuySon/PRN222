@@ -1,0 +1,71 @@
+﻿@page 
+@model SP25_PRN222_Restaurant.Pages.TableSearchModel
+@{
+    ViewData["Title"] = "Table Search";
+}
+
+<div class="container mt-5">
+    <h2>Table Search</h2>
+
+    <form method="get" asp-page-handler="Search" class="mb-4">
+        <div class="form-group">
+            <label asp-for="Seats" class="form-label">Number of Seats</label>
+            <input asp-for="Seats" class="form-control" type="number" min="1" />
+            <span asp-validation-for="Seats" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Search</button>
+    </form>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert alert-info" role="alert">
+            @Model.Message
+        </div>
+    }
+    else if (Model.Tables.Any())
+    {
+        <h4>Search Results</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Table Number</th>
+                    <th>Seats</th>
+                    <th>Status</th>
+                    @if (Model.IsAdmin)
+                    {
+                        <th>Actions</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var table in Model.Tables)
+                {
+                    <tr>
+                        <td>@table.TableNumber</td>
+                        <td>@table.Seats</td>
+                        <td>@table.Status</td>
+                        @if (Model.IsAdmin)
+                        {
+                            <td>
+                                <form method="post" asp-page-handler="UpdateStatus" style="display:inline;">
+                                    <input type="hidden" name="tableId" value="@table.Id" />
+                                    <input type="hidden" name="seat" value="@table.Seats" />
+                                    <select name="status" class="form-select d-inline-block w-auto">
+                                        <option value="Available" selected="@(table.Status == "Available")">Available</option>
+                                        <option value="Reserved" selected="@(table.Status == "Reserved")">Reserved</option>
+                                        <option value="Occupied" selected="@(table.Status == "Occupied")">Occupied</option>
+                                    </select>
+                                    <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                                </form>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

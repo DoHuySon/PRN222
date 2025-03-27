@@ -1,0 +1,81 @@
+﻿@page
+@model SP25_PRN222_Restaurant.Pages.ReservationModel
+@{
+    ViewData["Title"] = "Make a Reservation";
+}
+
+<div class="container mt-5">
+    <h2>Make a Reservation</h2>
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <div class="alert @(Model.Message.Contains("successfully") ? "alert-success" : "alert-danger")" role="alert">
+            @Model.Message
+        </div>
+    }
+
+    @if (!Model.IsCustomer)
+    {
+        <p>Please log in as a customer to make a reservation.</p>
+    }
+    else
+    {
+        <form method="post" class="mb-4">
+            <div class="form-group mb-3">
+                <label asp-for="TableId" class="form-label">Select a Table</label>
+                <select asp-for="TableId" class="form-select">
+                    <option value="">-- Select a Table --</option>
+                    @foreach (var table in Model.AvailableTables)
+                    {
+                        <option value="@table.Id">Table @table.TableNumber (Seats: @table.Seats)</option>
+                    }
+                </select>
+                <span asp-validation-for="TableId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="ReservationDate" class="form-label">Reservation Date and Time</label>
+                <input asp-for="ReservationDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="ReservationDate" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Make Reservation</button>
+        </form>
+
+        <h4>Your Reservations</h4>
+        @if (Model.UserReservations.Any())
+        {
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Table Number</th>
+                        <th>Reservation Date</th>
+                        <th>Status</th>
+                        <th>Created At</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var reservation in Model.UserReservations)
+                    {
+                        <tr>
+                            <td>
+                                @(Model.AvailableTables.FirstOrDefault(t => t.Id == reservation.TableId))
+                            </td>
+                            <td>@reservation.ReservationDate</td>
+                            <td>@reservation.Status</td>
+                            <td>@reservation.CreatedAt</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>You have no reservations.</p>
+        }
+    }
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

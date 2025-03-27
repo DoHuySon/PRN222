@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ASP_Test01.bundle.scp.css",
-      "PackagePath": "staticwebassets\\ASP_Test01.bundle.scp.css"
+      "PackagePath": "staticwebassets\\ASP_Test01.zubmb5d676.bundle.scp.css"
     },
     {
       "Id": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASP_Test01.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ASP_Test01.Microsoft.AspNetCore.StaticWebAssets.props",

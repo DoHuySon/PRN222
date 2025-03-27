@@ -1,0 +1,4 @@
+B1: Rebuild trước khi gen model
+B2: Gen model
+B3: Chỉnh sửa file context.cs
+B4. Chỉnh sửa program

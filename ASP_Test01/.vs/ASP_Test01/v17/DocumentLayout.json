@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Semester7\\PRN222\\ASP_Test01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FF3047AF-4308-4631-BB48-4B41EAF407E4}|ASP_Test01\\ASP_Test01.csproj|d:\\semester7\\prn222\\asp_test01\\asp_test01\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FF3047AF-4308-4631-BB48-4B41EAF407E4}|ASP_Test01\\ASP_Test01.csproj|solutionrelative:asp_test01\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF3047AF-4308-4631-BB48-4B41EAF407E4}|ASP_Test01\\ASP_Test01.csproj|d:\\semester7\\prn222\\asp_test01\\asp_test01\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF3047AF-4308-4631-BB48-4B41EAF407E4}|ASP_Test01\\ASP_Test01.csproj|solutionrelative:asp_test01\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FF3047AF-4308-4631-BB48-4B41EAF407E4}|ASP_Test01\\ASP_Test01.csproj|d:\\semester7\\prn222\\asp_test01\\asp_test01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FF3047AF-4308-4631-BB48-4B41EAF407E4}|ASP_Test01\\ASP_Test01.csproj|solutionrelative:asp_test01\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -39,19 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\appsettings.json",
+              "RelativeDocumentMoniker": "ASP_Test01\\appsettings.json",
+              "ToolTip": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\appsettings.json*",
+              "RelativeToolTip": "ASP_Test01\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-19T04:12:46.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ASP_Test01\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Controllers\\ProductController.cs*",
+              "RelativeToolTip": "ASP_Test01\\Controllers\\ProductController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T04:07:03.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "ASP_Test01\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "ASP_Test01\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB8AAAAWAAAA",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwBsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-12T04:55:27.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Program.cs",
               "RelativeDocumentMoniker": "ASP_Test01\\Program.cs",
@@ -59,12 +93,11 @@
               "RelativeToolTip": "ASP_Test01\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T04:52:42.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T04:52:42.88Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "ASP_Test01\\Controllers\\HomeController.cs",
@@ -72,12 +105,11 @@
               "RelativeToolTip": "ASP_Test01\\Controllers\\HomeController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T04:20:16.321Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T04:20:16.321Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Views\\Home\\Login.cshtml",
               "RelativeDocumentMoniker": "ASP_Test01\\Views\\Home\\Login.cshtml",
@@ -85,12 +117,11 @@
               "RelativeToolTip": "ASP_Test01\\Views\\Home\\Login.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T04:17:26.196Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T04:17:26.196Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "ASP_Test01\\Views\\Home\\Privacy.cshtml",
@@ -98,12 +129,11 @@
               "RelativeToolTip": "ASP_Test01\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T04:09:20.122Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T04:09:20.122Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Semester7\\PRN222\\ASP_Test01\\ASP_Test01\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ASP_Test01\\Views\\Home\\Index.cshtml",
@@ -111,8 +141,7 @@
               "RelativeToolTip": "ASP_Test01\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-12T04:08:59.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-12T04:08:59.506Z"
             }
           ]
         }

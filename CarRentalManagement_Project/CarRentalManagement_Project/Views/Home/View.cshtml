@@ -1,0 +1,280 @@
+﻿@model IEnumerable<CarRentalManagement_Project.Models.Xe>
+
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe Danh Cho Bạn</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .car-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+            .car-card:hover {
+                transform: scale(1.03);
+            }
+
+        .car-image {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            overflow: hidden;
+        }
+
+            .car-image img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        .discount-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: orange;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .car-details {
+            padding: 15px;
+        }
+
+        .car-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .car-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .car-specs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .car-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        .rental-tags {
+            display: flex;
+            gap: 10px;
+        }
+
+        .tag {
+            background-color: #e9ecef;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            color: #ffc107;
+        }
+
+            .rating span {
+                margin-left: 5px;
+            }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .promo-banners {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding-bottom: 20px;
+        }
+
+        .promo-banner {
+            flex: 0 0 calc(33.333% - 20px);
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+            .promo-banner img {
+                width: 100%;
+                height: auto;
+            }
+
+        .promo-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff6b00;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .promo-details {
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+            .promo-details h3 {
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .promo-details p {
+                color: #666;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Chương Trình Khuyến Mãi</h1>
+        <h2 class="header">Nhận nhiều ưu đãi hấp dẫn từ Sơn</h2>
+
+        <div class="promo-banners">
+            <div class="promo-banner">
+                <div class="promo-badge">Sẵn Sàng Dịp Nghỉ</div>
+                <img src="/images/vinfast-lux-a.jpg" alt="Toyota Sedan" />
+                <div class="promo-details">
+                    <h3>Đặt Sớm</h3>
+                    <p>Giảm giá 200K - Mã MI30K</p>
+                </div>
+            </div>
+
+            <div class="promo-banner">
+                <img src="/images/vinfast-lux-a.jpg" alt="Toyota Sedan" />
+                <div class="promo-details">
+                    <h3>Vui Lễ Trọn Vẹn</h3>
+                    <p>Giảm 120K - Mã MI574</p>
+                </div>
+            </div>
+
+            <div class="promo-banner">
+                <img src="/images/vinfast-lux-a.jpg" alt="Toyota Sedan" />
+                <div class="promo-details">
+                    <h3>Tự Do Cảm Lái</h3>
+                    <p>Ưu đãi 8% - Vi Vu Thoả Mái</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car-grid">
+        @foreach (var item in Model)
+        {
+            if (item != null)
+            {
+                <a href="@Url.Action("Details", "Xes", new { id = item.MaXe })" style="text-decoration: none; color: inherit;">
+                    <div class="car-card">
+                        <div class="car-image">
+                            <img src="@Html.DisplayFor(modelItem => item.HinhAnh)" alt="Hình ảnh xe" />
+                        </div>
+                        <div class="car-details">
+                            <div class="car-title">
+                                @(item.MaLoaiXeNavigation?.TenLoaiXe ?? "Không có loại xe")
+                            </div>
+                            <div class="car-info">
+                                <div class="rental-tags">
+                                    <div class="tag">
+                                        @(item.MaLoaiXeNavigation?.MoTa ?? "Không có mô tả")
+                                    </div>
+                                    <div class="tag">
+                                        @Html.DisplayFor(modelItem => item.TrangThai)
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-specs">
+                                <span>@Html.DisplayFor(modelItem => item.MauXe)</span>
+                                <span>@Html.DisplayFor(modelItem => item.HangXe)</span>
+                                <span>@Html.DisplayFor(modelItem => item.NamSanXuat)</span>
+                            </div>
+                            <div class="car-price">
+                                <div class="rating">
+                                    ★ 5.0
+                                    <span>(45 chuyến)</span>
+                                </div>
+                                <div class="price">
+                                    @Html.DisplayFor(modelItem => item.GiaThueMotNgay)/ngày
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            }
+        }
+    </div>
+</body>
+</html>
